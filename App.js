@@ -20,7 +20,8 @@ const App = () => {
   return(
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Onboard" component={Onboard} />
+        <Stack.Screen name="Onboard" component={Onboard}
+                      options={{ headerShown: false }} />
         <Stack.Screen name="SignUp" component={SignUp} />
       </Stack.Navigator>
     </NavigationContainer>

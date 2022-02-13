@@ -46,7 +46,7 @@ const Onboard = ({ navigation }) => {
     const keyExtractor = (item) => item.title;
 
     return(
-        <View style={{flex: .9}}>
+        <View style={{flex: 1, backgroundColor: Colors.White}}>
         <StatusBar translucent backgroundColor="transparent" />
         <AppIntroSlider
           keyExtractor={keyExtractor}
@@ -105,6 +105,7 @@ const styles = StyleSheet.create({
     },
     buttonsContainer: {
         flex: .1,
+        backgroundColor: Colors.White,
         flexDirection: "row",
         alignContent: 'center',
         justifyContent: 'center',
@@ -119,7 +120,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins',
         lineHeight: 20,
         alignSelf: 'center',
-        marginBottom:15
+        marginBottom:30
     }
 });
 
